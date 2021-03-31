@@ -48,20 +48,40 @@ exports.getAllCategory = (req, res, next) => {
     });
 };
 
-// exports.deleteCategory = (req, res, next) => {
-//   const userId = req.params.userId;
-//   User.remove({ _id: userId })
-//     .exec()
-//     .then((result) => {
-//       res.status(200).json({
-//         message: "User Deleted Successfully!",
-//       });
-//     })
-//     .catch((error) => {
-//       error.message = "Could Not Delete User!";
-//       next(error);
-//     });
-// };
+exports.getCategory = (req, res, next) => {
+  const categoryId = req.params.id;
+  Category.find({ _id: categoryId })
+    .exec()
+    .then((result) => {
+      if (result) {
+        return res.status(200).json({
+          category: result,
+          message: "Get Category Successful!",
+        });
+      }
+      const error = new Error();
+      error.message = "Failed!";
+      throw error;
+    })
+    .catch((error) => {
+      next(error);
+    });
+};
+
+exports.deleteCategory = (req, res, next) => {
+  const id = req.params.id;
+  Category.remove({ _id: id })
+    .exec()
+    .then((result) => {
+      res.status(200).json({
+        message: "Category Deleted Successfully!",
+      });
+    })
+    .catch((error) => {
+      error.message = "Could Not Delete Category!";
+      next(error);
+    });
+};
 
 function createCategory(name, description, image) {
   return new Category({

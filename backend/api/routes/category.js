@@ -8,4 +8,8 @@ router.post("/", checkAuth, CategoryController.createCategory);
 
 router.get("/", CategoryController.getAllCategory);
 
+router.get("/:id", CategoryController.getCategory);
+
+router.delete("/:id", checkAuth, CategoryController.deleteCategory);
+
 module.exports = router;
