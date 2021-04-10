@@ -4,10 +4,10 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const config = require("./config.js");
 
-// const productRoutes = require('./api/routes/products');
 // const orderRoutes = require('./api/routes/orders');
 const userRoutes = require("./api/routes/user");
 const categoryRoutes = require("./api/routes/category");
+const productRoutes = require("./api/routes/product");
 
 mongoose.connect(config.MONGO_URL_DEV, {
   useNewUrlParser: true,
@@ -49,9 +49,9 @@ app.use((req, res, next) => {
 });
 
 // Routes which should handle requests
-// app.use('/products', productRoutes);
 app.use("/user", userRoutes);
 app.use("/category", categoryRoutes);
+app.use("/product", productRoutes);
 
 // Handle Error Requests
 app.use((req, res, next) => {
