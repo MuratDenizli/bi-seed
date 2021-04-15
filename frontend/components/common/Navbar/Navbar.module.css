@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  ul:first-child,
+  ul:last {
+    display: flex;
+    li {
+      margin-right: 40px;
+      a {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+      a:hover {
+        color: var(--c-text-color-hover);
+      }
+    }
+  }
+
+  .logo {
+    text-align: center;
+    a {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 5px;
+    }
+  }
+}

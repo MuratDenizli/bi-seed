@@ -1,0 +1,16 @@
+.button {
+  cursor: pointer;
+  background: transparent;
+  color: var(--c-text-color);
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--fade);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--c-theme);
+    background-color: var(--c-theme-10);
+  }
+}

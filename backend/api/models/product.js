@@ -9,6 +9,7 @@ const productSchema = mongoose.Schema({
   },
   category_id: {
     type: String,
+    default: [],
     required: true,
   },
   quantity_per_unit: {
@@ -37,15 +38,5 @@ const productSchema = mongoose.Schema({
     default: [],
   },
 });
-
-// Getter
-// productSchema.path("unit_price").get(function (num) {
-//   return (num / 100).toFixed(2);
-// });
-
-// // Setter
-// productSchema.path("unit_price").set(function (num) {
-//   return num * 100;
-// });
 
 module.exports = mongoose.model("Product", productSchema);
