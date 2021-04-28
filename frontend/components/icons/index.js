@@ -1,3 +1,7 @@
+export { default as BarsSolid } from './BarsSolid'
+export { default as MinusSolid } from './MinusSolid'
+export { default as PlusSolid } from './PlusSolid'
 export { default as SearchSolid } from './SearchSolid'
 export { default as ShoppingBagSolid } from './ShoppingBagSolid'
+export { default as TimesSolid } from './TimesSolid'
 export { default as UserRegular } from './UserRegular'

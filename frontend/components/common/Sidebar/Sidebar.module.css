@@ -1,0 +1,47 @@
+.sidebar {
+  background-color: var(--c-primary);
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  position: absolute;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  svg:first-child {
+    height: 24px;
+    width: 24px;
+  }
+  ul {
+    margin-top: 10px;
+    li {
+      margin-top: 20px;
+      a {
+        display: flex;
+        justify-content: space-between;
+        span {
+          font-weight: 600;
+        }
+        svg {
+          height: 12px;
+          width: 12px;
+        }
+      }
+      ul {
+        margin-left: 10px;
+        margin-top: 0;
+        li {
+          margin-top: 5px;
+          a {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (--s) {
+  .sidebar {
+    width: 50vw;
+  }
+}

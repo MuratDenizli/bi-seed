@@ -3,3 +3,9 @@
   padding: 0 0.5rem;
   display: flex;
 }
+
+@media (--m) {
+  .container {
+    padding: 0 2rem;
+  }
+}
