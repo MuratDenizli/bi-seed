@@ -1,11 +1,5 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
+  padding: 0;
   display: flex;
-}
-
-@media (--m) {
-  .container {
-    padding: 0 2rem;
-  }
 }

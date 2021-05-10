@@ -6,7 +6,14 @@
   --c-gray: #6e767d;
   --c-dark-gray: #202327;
   --c-text-color: #000;
+  --c-text-color-secondary: #fff;
   --c-text-color-hover: #979797;
 
   --fade: 120ms;
+
+  --z-index-first: 9999;
+  --z-index-second: 999;
+  --z-index-third: 99;
+  --z-index-fourth: 9;
+  --z-index-negative: -1;
 }

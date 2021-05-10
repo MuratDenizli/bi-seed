@@ -1,0 +1,52 @@
+.trends {
+  display: flex;
+  position: relative;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  .bgWrap {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+  .bgTextArea {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: var(--c-text-color-secondary);
+    h2 {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+    span {
+      text-decoration: underline;
+      font-size: 0.8rem;
+    }
+  }
+  .img {
+    object-fit: cover;
+  }
+}
+
+@media (--m) {
+  .trends {
+    flex-wrap: nowrap;
+    .bgWrap {
+      height: 800px;
+      max-width: 633px;
+    }
+    .bgTextArea {
+      bottom: 50px;
+      left: 50px;
+      h2 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+      span {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

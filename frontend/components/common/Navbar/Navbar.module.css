@@ -3,6 +3,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
+  height: 100%;
+  z-index: var(--z-index-fourth);
+  padding: 1rem;
 
   .bars {
     flex-basis: 33.3%;
@@ -13,6 +16,7 @@
     display: flex;
     justify-content: flex-end;
     flex-basis: 33.3%;
+    background-color: var(--c-primary);
     li {
       margin-right: 10px;
     }
@@ -25,6 +29,7 @@
       font-size: 1rem;
       font-weight: 700;
       letter-spacing: 5px;
+      white-space: nowrap;
     }
   }
 }
@@ -54,6 +59,7 @@
           padding-top: 40px;
           margin-top: 20px;
           left: 0;
+          padding-left: 15px;
         }
       }
 

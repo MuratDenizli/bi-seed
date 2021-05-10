@@ -4,6 +4,9 @@ import styles from '../styles/Home.module.css'
 import cn from 'classnames'
 
 import Layout from '../components/common/Layout'
+import Banner from '../components/common/Banner'
+import Trends from '../components/common/Trends'
+import InstagramPhotos from '../components/common/InstagramPhotos'
 
 export default function Home() {
   return (
@@ -16,7 +19,11 @@ export default function Home() {
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Layout></Layout>
+      <Layout>
+        <Banner />
+        <Trends />
+        <InstagramPhotos />
+      </Layout>
     </div>
   )
 }
