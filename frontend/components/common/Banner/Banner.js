@@ -17,6 +17,7 @@ function Banner() {
     centerPadding: 0,
     arrows: false
   }
+
   return (
     <div className={styles.banner}>
       <Slider {...settings}>
@@ -25,7 +26,7 @@ function Banner() {
           alt="Picture of the author"
           layout="responsive"
           width={1920}
-          height={1000}
+          height={800}
           className={styles.img}
         />
         <Image
@@ -33,7 +34,7 @@ function Banner() {
           alt="Picture of the author"
           layout="responsive"
           width={1920}
-          height={1000}
+          height={800}
           className={styles.img}
         />
       </Slider>

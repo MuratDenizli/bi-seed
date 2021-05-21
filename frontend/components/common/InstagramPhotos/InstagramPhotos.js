@@ -12,75 +12,92 @@ function InstagramPhotos() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 6,
+    slidesToShow: 4,
     slidesToScroll: 1,
-    centerPadding: 0,
-    arrows: false
+    arrows: true
   }
   return (
     <div className={styles.insta}>
-      <Slider {...settings}>
-        <Link href="/">
-          <a className={styles.bgImg}>
-            <Image
-              src="/images/gomlek-kampanya-1.webp"
-              alt="Picture of the author"
-              layout="fill"
-              className={styles.img}
-            />
-          </a>
-        </Link>
-        <Link href="/">
-          <a className={styles.bgImg}>
-            <Image
-              src="/images/LB_22.04_Essential_Dye-25_1440x.webp"
-              alt="Picture of the author"
-              layout="fill"
-              className={styles.img}
-            />
-          </a>
-        </Link>
-        <Link href="/">
-          <a className={styles.bgImg}>
-            <Image
-              src="/images/gomlek-kampanya-1.webp"
-              alt="Picture of the author"
-              layout="fill"
-              className={styles.img}
-            />
-          </a>
-        </Link>
-        <Link href="/">
-          <a className={styles.bgImg}>
-            <Image
-              src="/images/gomlek-kampanya-1.webp"
-              alt="Picture of the author"
-              layout="fill"
-              className={styles.img}
-            />
-          </a>
-        </Link>
-        <Link href="/">
-          <a className={styles.bgImg}>
-            <Image
-              src="/images/gomlek-kampanya-1.webp"
-              alt="Picture of the author"
-              layout="fill"
-              className={styles.img}
-            />
-          </a>
-        </Link>
-        <Link href="/">
-          <a className={styles.bgImg}>
-            <Image
-              src="/images/gomlek-kampanya-1.webp"
-              alt="Picture of the author"
-              layout="fill"
-              className={styles.img}
-            />
-          </a>
-        </Link>
-      </Slider>
+      <div className={styles.title}>
+        <h2>#INSTAGRAM'DA BİZ</h2>
+        <span>
+          Seçtiğiniz parçaları kombinlemeden önce instagram sayfamıza gözatın.
+        </span>
+      </div>
+      <div className={styles.instapic}>
+        <Slider {...settings}>
+          <Image
+            src="/images/mm_landing_sostenibilidad_1904.webp"
+            alt="Picture of the author"
+            width={393}
+            height={594}
+            className={styles.img}
+          />
+          <Image
+            src="/images/she_lino_300521.webp"
+            alt="Picture of the author"
+            width={393}
+            height={594}
+            className={styles.img}
+          />
+          <Image
+            src="/images/87018634_70-99999999_01.jpg"
+            alt="Picture of the author"
+            width={393}
+            height={594}
+            className={styles.img}
+          />
+          <Image
+            src="/images/LB_22.04_Essential_Dye-25_1440x.webp"
+            alt="Picture of the author"
+            width={393}
+            height={594}
+            className={styles.img}
+          />
+          <Image
+            src="/images/gomlek-kampanya-1.webp"
+            alt="Picture of the author"
+            width={393}
+            height={594}
+            className={styles.img}
+          />
+          <Image
+            src="/images/LB_22.04_Essential_Dye-25_1440x.webp"
+            alt="Picture of the author"
+            width={393}
+            height={594}
+            className={styles.img}
+          />
+          <Image
+            src="/images/gomlek-kampanya-1.webp"
+            alt="Picture of the author"
+            width={393}
+            height={594}
+            className={styles.img}
+          />
+          <Image
+            src="/images/LB_22.04_Essential_Dye-25_1440x.webp"
+            alt="Picture of the author"
+            width={393}
+            height={594}
+            className={styles.img}
+          />
+          <Image
+            src="/images/gomlek-kampanya-1.webp"
+            alt="Picture of the author"
+            width={393}
+            height={594}
+            className={styles.img}
+          />
+          <Image
+            src="/images/LB_22.04_Essential_Dye-25_1440x.webp"
+            alt="Picture of the author"
+            width={393}
+            height={594}
+            className={styles.img}
+          />
+        </Slider>
+      </div>
     </div>
   )
 }

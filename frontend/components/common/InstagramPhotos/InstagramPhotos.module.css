@@ -1,25 +1,54 @@
 .insta {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-
-  .bgImg {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .title {
+    text-align: center;
+    margin-bottom: 30px;
+    h2 {
+      font-size: 48px;
+      font-weight: 900;
+    }
+    span {
+      font-size: 24px;
+    }
+  }
+  .instapic {
+    display: flex;
     position: relative;
-    height: 200px;
-    width: 100%;
-    min-width: 200px;
-  }
-
-  .img {
-    object-fit: cover;
-  }
-
-  :global(.slick-initialized) {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
     overflow: hidden;
-  }
+    .img {
+      object-fit: cover;
+    }
 
-  :global(.slick-dots) {
-    bottom: 0;
+    :global(.slick-initialized) {
+      overflow: hidden;
+    }
+
+    :global(.slick-dots) {
+      bottom: 0;
+    }
+
+    :global(.slick-prev) {
+      left: 20px;
+      z-index: var(--z-index-fourth);
+    }
+
+    :global(.slick-next) {
+      right: 20px;
+      z-index: var(--z-index-fourth);
+    }
+
+    :global(.slick-slide) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 }

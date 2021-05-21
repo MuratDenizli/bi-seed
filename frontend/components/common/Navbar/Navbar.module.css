@@ -25,11 +25,20 @@
   .logo {
     text-align: center;
     flex-basis: 33.3%;
+
     a {
       font-size: 1rem;
       font-weight: 700;
       letter-spacing: 5px;
       white-space: nowrap;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      img {
+        height: 48px;
+        position: absolute;
+      }
     }
   }
 }
