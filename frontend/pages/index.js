@@ -7,6 +7,7 @@ import Layout from '../components/common/Layout'
 import Banner from '../components/common/Banner'
 import Trends from '../components/common/Trends'
 import InstagramPhotos from '../components/common/InstagramPhotos'
+import EmailSubscription from '../components/common/EmailSubscription'
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Banner />
         <Trends />
         <InstagramPhotos />
+        <EmailSubscription />
       </Layout>
     </div>
   )

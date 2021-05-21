@@ -24,31 +24,70 @@
     margin: 0 auto;
     margin-top: 20px;
     overflow: hidden;
+
     .img {
       object-fit: cover;
+      border-radius: 10px;
     }
 
     :global(.slick-initialized) {
       overflow: hidden;
     }
 
+    :global(.slick-list) {
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+
     :global(.slick-dots) {
-      bottom: 0;
+      bottom: 10px;
     }
 
     :global(.slick-prev) {
-      left: 20px;
+      left: 30px;
       z-index: var(--z-index-fourth);
     }
 
     :global(.slick-next) {
-      right: 20px;
+      right: 40px;
       z-index: var(--z-index-fourth);
     }
 
     :global(.slick-slide) {
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    :global(.slick-prev:before) {
+      font-size: 36px;
+    }
+
+    :global(.slick-next:before) {
+      font-size: 36px;
+    }
+  }
+}
+
+@media (--s) {
+  .insta {
+    margin-top: 50px;
+    .title {
+      margin-bottom: 10px;
+      h2 {
+        font-size: 30px;
+      }
+      span {
+        font-size: 16px;
+      }
+    }
+
+    .instapic {
+      width: 100%;
+    }
+    :global(.slick-dots) {
+      li {
+        width: 10px;
+      }
     }
   }
 }
