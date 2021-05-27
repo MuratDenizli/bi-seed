@@ -2,6 +2,7 @@
   --c-primary: #fff;
   --c-theme: #fff;
   --c-theme-10: rgba(29, 161, 242, 0.1);
+  --c-theme-20: #efefef;
   --c-border-color: rgb(230, 236, 240);
   --c-gray: #6e767d;
   --c-dark-gray: #202327;
@@ -10,6 +11,8 @@
   --c-text-color-hover: #979797;
 
   --fade: 120ms;
+
+  --container: 1520px;
 
   --z-index-first: 9999;
   --z-index-second: 999;

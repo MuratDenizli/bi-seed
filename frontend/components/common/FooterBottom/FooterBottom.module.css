@@ -1,14 +1,30 @@
 .footerbottom {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-
-.paymentlogos {
-  grid-area: 1 / 1 / 2 / 2;
-}
-.cardlogos {
-  grid-area: 1 / 2 / 2 / 3;
+  background-color: var(--c-theme-20);
+  .logosarea {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    max-width: var(--container);
+    margin: 0 auto;
+    padding-bottom: 10px;
+    .paymentlogos {
+      grid-area: 1 / 1 / 2 / 2;
+      div {
+        display: flex;
+      }
+    }
+    .cardlogos {
+      grid-area: 1 / 2 / 2 / 3;
+      div {
+        display: flex;
+      }
+    }
+    p {
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  }
 }
