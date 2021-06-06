@@ -4,13 +4,16 @@
   --c-theme-10: rgba(29, 161, 242, 0.1);
   --c-theme-20: #efefef;
   --c-border-color: rgb(230, 236, 240);
+  --c-border-color-1: rgba(0, 0, 0, 0.9);
   --c-gray: #6e767d;
   --c-dark-gray: #202327;
   --c-text-color: #000;
   --c-text-color-secondary: #fff;
   --c-text-color-hover: #979797;
+  --c-button-color: rgb(0, 0, 0);
+  --c-button-color-hover: rgb(72, 72, 72);
 
-  --fade: 120ms;
+  --fade: 200ms;
 
   --container: 1520px;
 

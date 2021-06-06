@@ -1,3 +1,4 @@
+import React from 'react'
 import Link from 'next/link'
 import { Phone, Whatsapp, Document } from '../../icons'
 
@@ -77,4 +78,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default React.memo(Footer)

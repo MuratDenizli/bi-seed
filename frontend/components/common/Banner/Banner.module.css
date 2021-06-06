@@ -7,11 +7,27 @@
     object-fit: cover;
   }
 
+  video {
+    object-fit: cover;
+    outline: none;
+  }
+
   :global(.slick-initialized) {
     overflow: hidden;
   }
 
   :global(.slick-dots) {
     bottom: 0;
+  }
+}
+
+@media (--s) {
+  .banner {
+    .img {
+      height: auto;
+    }
+    video {
+      height: auto;
+    }
   }
 }

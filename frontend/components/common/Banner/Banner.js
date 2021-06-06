@@ -15,26 +15,34 @@ function Banner() {
     slidesToShow: 1,
     slidesToScroll: 1,
     centerPadding: 0,
+    autoplay: true,
+    autoplaySpeed: 40000,
     arrows: false
   }
 
   return (
     <div className={styles.banner}>
       <Slider {...settings}>
+        <video autoPlay muted loop>
+          <source
+            src="https://player.vimeo.com/external/518475316.hd.mp4?s=33b20602fd10dee2b749cb1b96afda6b5034c30a&profile_id=175"
+            type="video/mp4"
+          ></source>
+        </video>
         <Image
           src="/images/gomlek-kampanya-1.webp"
           alt="Picture of the author"
           layout="responsive"
-          width={1920}
-          height={800}
+          width={16}
+          height={9}
           className={styles.img}
         />
         <Image
           src="/images/LB_22.04_Essential_Dye-25_1440x.webp"
           alt="Picture of the author"
           layout="responsive"
-          width={1920}
-          height={800}
+          width={16}
+          height={9}
           className={styles.img}
         />
       </Slider>

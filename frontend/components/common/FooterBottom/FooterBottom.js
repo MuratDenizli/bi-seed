@@ -1,3 +1,4 @@
+import React from 'react'
 import Image from 'next/image'
 
 import styles from './FooterBottom.module.css'
@@ -142,4 +143,4 @@ function FooterBottom() {
   )
 }
 
-export default FooterBottom
+export default React.memo(FooterBottom)
