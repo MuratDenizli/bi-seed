@@ -8,7 +8,7 @@ function Layout({ ...props }) {
   return (
     <div className={styles.layout}>
       <Navbar />
-      <div>{props.children}</div>
+      {props.children}
     </div>
   )
 }

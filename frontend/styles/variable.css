@@ -3,6 +3,8 @@
   --c-theme: #fff;
   --c-theme-10: rgba(29, 161, 242, 0.1);
   --c-theme-20: #efefef;
+  border-radius: 8px;
+  --c-back-color: #211f260f;
   --c-border-color: rgb(230, 236, 240);
   --c-border-color-1: rgba(0, 0, 0, 0.9);
   --c-gray: #6e767d;

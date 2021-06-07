@@ -26,11 +26,11 @@ function Login() {
       </div>
       <div className={styles.loginImg}>
         <Image
-          src="/images/gomlek-kampanya-1.webp"
+          src="/images/valentino.webp"
           alt="Picture of the author"
           layout="responsive"
-          width={16}
-          height={9}
+          width={100}
+          height={67}
           className={styles.img}
         />
       </div>
