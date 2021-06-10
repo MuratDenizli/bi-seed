@@ -29,6 +29,6 @@
     "postcss-nested": "^5.0.5",
     "prettier": "2.2.1",
     "styles-loader": "^3.0.0",
-    "webpack": "^5.33.2"
+    "webpack": "^5.38.1"
   }
 }
