@@ -81,7 +81,21 @@
     width: 100%;
     overflow: hidden;
     .img {
-      object-fit: contain;
+      object-fit: cover;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media (--l) {
+  .login {
+    .box {
+      padding: 10px;
+    }
+    .loginImg {
+      display: none;
     }
   }
 }

@@ -25,12 +25,9 @@ function Login() {
         </Link>
       </div>
       <div className={styles.loginImg}>
-        <Image
-          src="/images/valentino.webp"
+        <img
+          src="/images/mm_landing_sostenibilidad_1904.webp"
           alt="Picture of the author"
-          layout="responsive"
-          width={100}
-          height={67}
           className={styles.img}
         />
       </div>
