@@ -20,9 +20,14 @@ function Login() {
           placeholder="Şifrenizi giriniz."
         />
         <input type="submit" value="Giriş Yap" />
-        <Link href="/">
-          <a>Şifremi Unuttum</a>
-        </Link>
+        <div className={styles.links}>
+          <Link href="/">
+            <a>Şifremi Unuttum</a>
+          </Link>
+          <Link href="/register">
+            <a>Hesap Oluştur</a>
+          </Link>
+        </div>
       </div>
       <div className={styles.loginImg}>
         <img

@@ -66,11 +66,21 @@
       }
     }
 
-    a {
-      text-align: start;
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       width: 100%;
-      &:hover {
-        border-bottom: 1px solid var(--c-theme-20);
+      a {
+        text-align: start;
+        width: 100%;
+        &:hover {
+          border-bottom: 1px solid var(--c-border-color-1);
+        }
+      }
+
+      a:last-child {
+        text-align: right;
       }
     }
   }
