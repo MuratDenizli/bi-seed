@@ -46,7 +46,7 @@ function FooterBottom() {
           </div>
         </div>
         <div className={styles.cardlogos}>
-          <p>LC Waikiki'de Taksit Avantajları</p>
+          <p>BI-SEED'de Taksit Avantajları</p>
           <div>
             <div
               style={{ position: 'relative', width: '80px', height: '20px' }}

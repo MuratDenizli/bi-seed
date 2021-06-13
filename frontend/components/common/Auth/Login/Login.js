@@ -21,7 +21,7 @@ function Login() {
         />
         <input type="submit" value="Giriş Yap" />
         <div className={styles.links}>
-          <Link href="/">
+          <Link href="/forgotpassword">
             <a>Şifremi Unuttum</a>
           </Link>
           <Link href="/register">
