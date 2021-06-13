@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 
 import styles from './Register.module.css'
 
+//ccsler Layouta taşınacak
 function Register() {
   return (
     <div className={styles.login}>
@@ -19,10 +19,21 @@ function Register() {
           name="password"
           placeholder="Şifrenizi giriniz."
         />
-        <input type="submit" value="Giriş Yap" />
-        <Link href="/">
-          <a>Şifremi Unuttum</a>
-        </Link>
+        <div className={styles.checkboxArea}>
+          <label htmlFor="checkbox-true">
+            <input id="checkbox-true" type="checkbox" name="marketing-email" />
+            <p>
+              Kampanyalardan haberdar olmak için elektronik ileti almak
+              istiyorum.
+            </p>
+          </label>
+        </div>
+        <input type="submit" value="Üye Ol" />
+        <div className={styles.links}>
+          <Link href="/userlogin">
+            <a>Giriş yap</a>
+          </Link>
+        </div>
       </div>
       <div className={styles.loginImg}>
         <img
