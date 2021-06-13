@@ -73,7 +73,7 @@
       width: 100%;
       a {
         text-align: start;
-        width: 100%;
+        width: auto;
         &:hover {
           border-bottom: 1px solid var(--c-border-color-1);
         }
