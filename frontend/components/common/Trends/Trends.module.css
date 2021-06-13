@@ -3,7 +3,9 @@
   position: relative;
   margin-top: 50px;
   flex-wrap: wrap;
+
   .bgWrap {
+    flex: 1;
     position: relative;
     height: 500px;
     width: 100%;
