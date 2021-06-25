@@ -1,0 +1,58 @@
+[
+    {
+        "id":"0",
+        "name":"Lacoste Erkek Slim Fit Yeşil Polo",
+        "price":584,
+        "isSale":false,
+        "sale":0
+    },
+    {
+        "id":"1",
+        "name":"Lacoste Erkek Klasik Fit L1212 Uzun Kollu Siyah Polo",
+        "price":622,
+        "isSale":false,
+        "sale":0
+    },
+    {
+        "id":"2",
+        "name":"Lacoste Erkek Slim Fit Yeşil Polo",
+        "price":622,
+        "isSale":true,
+        "sale":20
+    },
+    {
+        "id":"3",
+        "name":"Lacoste Erkek Klasik Fit L1212 Uzun Kollu Siyah Polo",
+        "price":584,
+        "isSale":false,
+        "sale":0
+    },
+    {
+        "id":"4",
+        "name":"Lacoste Erkek Slim Fit Yeşil Polo",
+        "price":449,
+        "isSale":true,
+        "sale":20
+    },
+    {
+        "id":"5",
+        "name":"Lacoste Erkek Klasik Fit L1212 Uzun Kollu Siyah Polo",
+        "price":659,
+        "isSale":false,
+        "sale":0
+    },
+    {
+        "id":"6",
+        "name":"Lacoste Erkek Slim Fit Yeşil Polo",
+        "price":879,
+        "isSale":false,
+        "sale":0
+    },
+    {
+        "id":"7",
+        "name":"Lacoste Erkek Klasik Fit L1212 Uzun Kollu Siyah Polo",
+        "price":999,
+        "isSale":false,
+        "sale":0
+    }
+]
