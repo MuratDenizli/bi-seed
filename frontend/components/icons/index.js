@@ -1,5 +1,6 @@
 export { default as BarsSolid } from './BarsSolid'
 export { default as Document } from './Document'
+export { default as Filter } from './Filter'
 export { default as MinusSolid } from './MinusSolid'
 export { default as Phone } from './Phone'
 export { default as PlusSolid } from './PlusSolid'
