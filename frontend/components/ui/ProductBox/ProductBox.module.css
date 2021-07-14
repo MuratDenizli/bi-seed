@@ -1,15 +1,20 @@
 .box {
   width: inherit;
-  height: 100%;
+  box-shadow: 0 30px 75px -35px #00000094;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   .imageArea {
     position: relative;
-    width: inherit;
     display: block;
     :global(.slick-list) {
-      width: 400px;
+      max-width: 600px;
       :global(.slick-track) {
         img {
-          max-width: 400px;
+          cursor: pointer;
+          object-fit: cover;
         }
       }
     }
@@ -24,6 +29,44 @@
       color: var(--c-text-color-secondary);
       padding: 5px 10px;
       border-radius: 10px;
+    }
+  }
+  .name {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .price {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .sale {
+    margin-left: 10px;
+  }
+  button {
+    -webkit-box-align: center;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    outline: none;
+    padding: 8px;
+    position: relative;
+    text-decoration: none;
+    background-color: var(--c-button-color);
+    color: var(--c-text-color-secondary);
+    font-size: 16px;
+    height: 56px;
+    margin: 10px;
+
+    &:hover {
+      background-color: var(--c-button-color-hover);
+      transition: var(--fade);
     }
   }
 }

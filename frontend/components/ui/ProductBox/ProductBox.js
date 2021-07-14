@@ -16,8 +16,6 @@ function ProductBox({ product }) {
     slidesToShow: 1,
     slidesToScroll: 1,
     centerPadding: 0,
-    autoplay: true,
-    autoplaySpeed: 40000,
     arrows: false
   }
   return (
@@ -31,7 +29,7 @@ function ProductBox({ product }) {
                 alt={image.altText}
                 key={image.url}
                 height={image.height}
-                width={image.width}
+                // width={image.width}
               />
             ))}
           </Slider>
@@ -39,7 +37,10 @@ function ProductBox({ product }) {
         {product.sale && <span>{product.sale}%</span>}
       </a>
       <a className={styles.name}>{product.name}</a>
-      <p className={styles.price}>
+      <p
+        className={styles.price}
+        style={product.sale && { textDecoration: 'line-through' }}
+      >
         {product.price.value} {product.price.currencyCode}
       </p>
       {product.sale && (
@@ -49,6 +50,7 @@ function ProductBox({ product }) {
           &nbsp;{product.price.currencyCode}
         </p>
       )}
+      <button>Sepete Ekle</button>
     </div>
   )
 }
