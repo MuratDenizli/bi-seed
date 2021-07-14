@@ -1,2 +1,29 @@
 .box {
+  width: inherit;
+  height: 100%;
+  .imageArea {
+    position: relative;
+    width: inherit;
+    display: block;
+    :global(.slick-list) {
+      width: 400px;
+      :global(.slick-track) {
+        img {
+          max-width: 400px;
+        }
+      }
+    }
+    :global(.slick-dots) {
+      bottom: 10px;
+    }
+    span {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      background-color: var(--c-sale-color);
+      color: var(--c-text-color-secondary);
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
+  }
 }
