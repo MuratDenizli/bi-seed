@@ -6,6 +6,7 @@
   height: 100%;
   z-index: var(--z-index-fourth);
   padding: 1rem;
+  position: relative;
 
   .bars {
     flex-basis: 33.3%;
@@ -19,6 +20,9 @@
     background-color: var(--c-primary);
     li {
       margin-right: 10px;
+      /* ul {
+        display: none;
+      } */
     }
   }
 
@@ -45,8 +49,6 @@
 
 @media (--m) {
   .navbar {
-    position: relative;
-
     ul {
       justify-content: flex-start;
       li {

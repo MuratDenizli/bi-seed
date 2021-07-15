@@ -37,6 +37,12 @@ function Banner() {
           height={9}
           className={styles.img}
         />
+        <video autoPlay muted loop>
+          <source
+            src="https://static1.lacoste.com/videos/marketing/1A-durableelegance-aveclogo-dk.mp4"
+            type="video/mp4"
+          ></source>
+        </video>
         <Image
           src="/images/LB_22.04_Essential_Dye-25_1440x.webp"
           alt="Picture of the author"
